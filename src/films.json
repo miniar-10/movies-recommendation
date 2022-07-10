@@ -1,0 +1,695 @@
+{   
+    "upcoming": [
+        {
+            "adult": false,
+            "backdrop_path": "/wcKFYIiVDvRURrzglV9kGu7fpfY.jpg",
+            "genre_ids": [
+                14,
+                28,
+                12
+            ],
+            "id": 453395,
+            "original_language": "en",
+            "original_title": "Doctor Strange in the Multiverse of Madness",
+            "overview": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+            "popularity": 10084.004,
+            "poster_path": "/61PVJ06oecwvcBisoAQu6SDfdcS.jpg",
+            "release_date": "2022",
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "video": false,
+            "vote_average": 7.6,
+            "vote_count": 3728,
+            "background":"#977372"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zGLHX92Gk96O1DJvLil7ObJTbaL.jpg",
+            "genre_ids": [
+                14,
+                12,
+                28
+            ],
+            "id": 338953,
+            "original_language": "en",
+            "original_title": "Fantastic Beasts: The Secrets of Dumbledore",
+            "overview": "Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.",
+            "popularity": 2818.865,
+            "poster_path": "/jrgifaYeUtTnaH7NF5Drkgjg2MB.jpg",
+            "release_date": "2023",
+            "title": "Fantastic Beasts: The Secrets of Dumbledore",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 2078,
+            "background":"#d6c388"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
+            "genre_ids": [
+                28,
+                12,
+                10751,
+                35
+            ],
+            "id": 675353,
+            "original_language": "en",
+            "original_title": "Sonic the Hedgehog 2",
+            "overview": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.",
+            "popularity": 2387.591,
+            "poster_path": "/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+            "release_date": "2022",
+            "title": "Sonic the Hedgehog 2",
+            "video": false,
+            "vote_average": 7.7,
+            "vote_count": 2308,
+            "background":"#8da4c7"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/t0mwKhUDa62hdhdKSsN4xMfhY5Z.jpg",
+            "genre_ids": [
+                18,
+                35
+            ],
+            "id": 626735,
+            "original_language": "en",
+            "original_title": "Dog",
+            "overview": "An army ranger and his dog embark on a road trip along the Pacific Coast Highway to attend a friend's funeral.",
+            "popularity": 2354.513,
+            "poster_path": "/rkpLvPDe0ZE62buUS32exdNr7zD.jpg",
+            "release_date": "2024",
+            "title": "Dog",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 516,
+            "background":"#dfba9f"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/qBu6blwnOA75Hz61QHrNe8unUNw.jpg",
+            "genre_ids": [
+                53,
+                80,
+                18
+            ],
+            "id": 975714,
+            "original_language": "en",
+            "original_title": "Collision",
+            "overview": "Over the course of one fateful day, a corrupt businessman and his socialite wife race to save their daughter from a notorious crime lord.",
+            "popularity": 2235.872,
+            "poster_path": "/4zsihgkxMZ7MrflNCjkD3ySFJtc.jpg",
+            "release_date": "2022",
+            "title": "Collision",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 46,
+            "background":"#816751"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gG9fTyDL03fiKnOpf2tr01sncnt.jpg",
+            "genre_ids": [
+                28,
+                878,
+                14
+            ],
+            "id": 526896,
+            "original_language": "en",
+            "original_title": "Morbius",
+            "overview": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+            "popularity": 2038.496,
+            "poster_path": "/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
+            "release_date": "2022",
+            "title": "Morbius",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 1883,
+            "background":"#4c8781"
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/1Ds7xy7ILo8u2WWxdnkJth1jQVT.jpg",
+            "genre_ids": [
+                28,
+                12,
+                35
+            ],
+            "id": 752623,
+            "original_language": "en",
+            "original_title": "The Lost City",
+            "overview": "A reclusive romance novelist was sure nothing could be worse than getting stuck on a book tour with her cover model until a kidnapping attempt sweeps them both into a cutthroat jungle adventure, proving life can be so much stranger, and more romantic, than any of her paperback fictions.",
+            "popularity": 1961.798,
+            "poster_path": "/neMZH82Stu91d3iqvLdNQfqPPyl.jpg",
+            "release_date": "2023",
+            "title": "The Lost City",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 1371,
+            "background":"#b9bf79"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 634649,
+            "original_language": "en",
+            "original_title": "Spider-Man: No Way Home",
+            "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+            "popularity": 1927.454,
+            "poster_path": "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+            "release_date": "2022",
+            "title": "Spider-Man: No Way Home",
+            "video": false,
+            "vote_average": 8.1,
+            "vote_count": 13846,
+            "background":"#dcaa9a"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wo3l9p0S7pcvwlzlndtKgq0peRJ.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 507086,
+            "original_language": "en",
+            "original_title": "Jurassic World Dominion",
+            "overview": "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures.",
+            "popularity": 1920.879,
+            "poster_path": "/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg",
+            "release_date": "2022",
+            "title": "Jurassic World Dominion",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 879,
+            "background":"#d4b86c"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/vjnLXptqdxnpNJer5fWgj2OIGhL.jpg",
+            "genre_ids": [
+                28,
+                53,
+                80
+            ],
+            "id": 818397,
+            "original_language": "en",
+            "original_title": "Memory",
+            "overview": "Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.",
+            "popularity": 1846.758,
+            "poster_path": "/4Q1n3TwieoULnuaztu9aFjqHDTI.jpg",
+            "release_date": "2023",
+            "title": "Memory",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 430,
+            "background":"#828689"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/GLLgrghu7wSPaSjl2Rw4kjASOJ.jpg",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "id": 756999,
+            "original_language": "en",
+            "original_title": "The Black Phone",
+            "overview": "Finney Shaw, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof basement where screaming is of little use. When a disconnected phone on the wall begins to ring, Finney discovers that he can hear the voices of the killer’s previous victims. And they are dead set on making sure that what happened to them doesn’t happen to Finney.",
+            "popularity": 1773.238,
+            "poster_path": "/bxHZpV02OOu9vq3sb3MsOudEnYc.jpg",
+            "release_date": "2023",
+            "title": "The Black Phone",
+            "video": false,
+            "vote_average": 7.2,
+            "vote_count": 144
+           , "background":"#5a3836"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/v7hdWmLh6VLgZQgkbHDxAa17M47.jpg",
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "id": 852592,
+            "original_language": "es",
+            "original_title": "Centauro",
+            "overview": "Rafa's hooked on the pure, fiery feelings he gets from speed racing, but when his kid's mom gets mixed up with drug dealers, he burns rubber to save her.",
+            "popularity": 1727.525,
+            "poster_path": "/wOx97MJOxEoR38aoya3lopyrlYC.jpg",
+            "release_date": "2024",
+            "title": "Centauro",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 47
+           , "background":"white"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5tmjv1moohN65IuHAbYjKw3cw7I.jpg",
+            "genre_ids": [
+                878,
+                53
+            ],
+            "id": 615469,
+            "original_language": "en",
+            "original_title": "Spiderhead",
+            "overview": "A prisoner in a state-of-the-art penitentiary begins to question the purpose of the emotion-controlling drugs he's testing for a pharmaceutical genius.",
+            "popularity": 1682.375,
+            "poster_path": "/7COPO5B9AOKIB4sEkvNu0wfve3c.jpg",
+            "release_date": "2022",
+            "title": "Spiderhead",
+            "video": false,
+            "vote_average": 5.7,
+            "vote_count": 445
+           , "background":"#676e50"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jVGHRpSgtE2MQLJhC5q4lXmPNQW.jpg",
+            "genre_ids": [
+                27,
+                53,
+                28
+            ],
+            "id": 960258,
+            "original_language": "en",
+            "original_title": "Shark Bait",
+            "overview": "A group of friends enjoying a weekend steal a couple of jetskis racing them out to sea, ending up in a horrific head-on collision. They struggle to find a way home with a badly injured friend while from the waters below predators lurk.",
+            "popularity": 1517.774,
+            "poster_path": "/mVVU9zC8snNHlcqYONY2HOsh9ob.jpg",
+            "release_date": "2022",
+            "title": "Shark Bait",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 62
+           , "background":"#6a5568"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/qp8qKiP7Q7zK4z3LItwWMHfV9kJ.jpg",
+            "genre_ids": [
+                53
+            ],
+            "id": 764835,
+            "original_language": "en",
+            "original_title": "The Desperate Hour",
+            "overview": "A woman desperately races to save her child after police place her hometown on lockdown due to an active shooter incident.",
+            "popularity": 1504.582,
+            "poster_path": "/u6Pg9eTklhg6Aa7kXaxrfdE1Chi.jpg",
+            "release_date": "2022",
+            "title": "The Desperate Hour",
+            "video": false,
+            "vote_average": 6.1,
+            "vote_count": 150
+           , "background":"#4b595e"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/fOy2Jurz9k6RnJnMUMRDAgBwru2.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                35,
+                14
+            ],
+            "id": 508947,
+            "original_language": "en",
+            "original_title": "Turning Red",
+            "overview": "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
+            "popularity": 1482.16,
+            "poster_path": "/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg",
+            "release_date": "2022",
+            "title": "Turning Red",
+            "video": false,
+            "vote_average": 7.5,
+            "vote_count": 2602
+           , "background":"#ecb49b"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/trtFAmf4IcndxSh5tIfLwxPyW67.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 628878,
+            "original_language": "en",
+            "original_title": "Panama",
+            "overview": "An ex-marine is hired by a defense contractor to travel to Panama to complete an arms deal. In the process he becomes involved with the U.S. invasion of Panama, and learns an important lesson about the true nature of political power.",
+            "popularity": 1437.908,
+            "poster_path": "/u9DzgsmssidygWuORgYzhi317vj.jpg",
+            "release_date": "2022",
+            "title": "Panama",
+            "video": false,
+            "vote_average": 5.9,
+            "vote_count": 54
+           , "background":"#7d9399"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cqnVuxXe6vA7wfNWubak3x36DKJ.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "id": 639933,
+            "original_language": "en",
+            "original_title": "The Northman",
+            "overview": "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
+            "popularity": 1417.983,
+            "poster_path": "/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg",
+            "release_date": "2023",
+            "title": "The Northman",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 1721
+           , "background":"#dde3d5"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2gGVdr0BcKzma68SW2jpZfJtOlB.jpg",
+            "genre_ids": [
+                10751,
+                16,
+                28,
+                12,
+                35
+            ],
+            "id": 438148,
+            "original_language": "en",
+            "original_title": "Minions: The Rise of Gru",
+            "overview": "A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.",
+            "popularity": 1408.742,
+            "poster_path": "/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg",
+            "release_date": "2023",
+            "title": "Minions: The Rise of Gru",
+            "video": false,
+            "vote_average": 7.9,
+            "vote_count": 54
+           , "background":"#f0e1aa"
+
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wcJ0H0jDF9U5NFNq8VFcBcqZ6B5.jpg",
+            "genre_ids": [
+                80,
+                28
+            ],
+            "id": 893297,
+            "original_language": "en",
+            "original_title": "American Sicario",
+            "overview": "The story of the rise and fall of the first American-born drug lord in Mexico, this tale of power, money, greed and betrayal amongst rival members of the drug cartels finds American gangster Erik Vasquez scheming to become the top dog in the Mexican underworld, only to find himself making enemies out of both the powerful cartels and his own allies.",
+            "popularity": 1398.281,
+            "poster_path": "/nQRPSUmHGLrFRPK6v3BI1frAM1O.jpg",
+            "release_date": "2022",
+            "title": "American Sicario",
+            "video": false,
+            "vote_average": 5.6,
+            "vote_count": 35
+           , "background":"#e8b085"
+
+        }
+    ],
+   
+        "trendings": [
+            {
+                "adult": false,
+                "backdrop_path": "/kZtwFjxFRgfdji8g8TfiaVcUEIM.jpg",
+                "genre_ids": [
+                    27,
+                    9648
+                ],
+                "id": 989663,
+                "original_language": "pt",
+                "original_title": "Panic At Midnight",
+                "overview": "",
+                "popularity": 0.6,
+                "poster_path": "/3kv6eSkZ2Q8w9nFaPGjeMUuds6W.jpg",
+                "release_date": "1997-12-20",
+                "title": "Panic At Midnight",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+            },
+    
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    27,
+                    878,
+                    18,
+                    53
+                ],
+                "id": 980478,
+                "original_language": "en",
+                "original_title": "Metamorphosis",
+                "overview": "Seeking refuge on an island in Upstate New York, a married couple's final attempt to salvage their failing relationship takes a turn for the worse when the husband begins to regress emotionally, mentally, and physically.",
+                "popularity": 0.86,
+                "poster_path": "/zxdFoFQA710sxYzwucbvjQGFmI4.jpg",
+                "release_date": "2022-05-09",
+                "title": "Metamorphosis",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+            },
+            {
+                "adult": false,
+                "backdrop_path":"/hSeEbkzw2I9OgxwZI5qvPRuX2U4.jpg" ,
+                "genre_ids": [
+                    18
+                ],
+                "id": 979975,
+                "original_language": "en",
+                "original_title": "Free",
+                "overview": "Sam, a restless teenage skateboarder, aspires to fit in with the older kids in his neighborhood against the loving advice of his mother.",
+                "popularity": 0.631,
+                "poster_path": "/hSeEbkzw2I9OgxwZI5qvPRuX2U4.jpg",
+                "release_date": "2022-05-25",
+                "title": "Free",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/rZuqxW84L3pBXfeUptdb6JLAhLy.jpg",
+                "genre_ids": [
+                    35
+                ],
+                "id": 966083,
+                "original_language": "en",
+                "original_title": "Million Dollar Extreme Presents - World Peace",
+                "overview": "Million Dollar Extreme Presents: World Peace, a satiric vision largely set in a post-apocalyptic world. The popular sketch group is comprised of Sam Hyde, Charls Carroll, and Nick Rochefort.",
+                "popularity": 0.6,
+                "poster_path": "/xo0ZeC14D55imRzVwK9SgeAMx4r.jpg",
+                "release_date": "2016-08-06",
+                "title": "Million Dollar Extreme Presents - World Peace",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    27
+                ],
+                "id": 953377,
+                "original_language": "en",
+                "original_title": "Loving Polly",
+                "overview": "After a young teenage girl leaves a summer concert in the mid 90's, she is viciously attacked and abducted by a young man with animalistic-like behavior. Polly awakens confused and frightened in a deserted vacation home where she is then brutally tortured over a 12 hour period.",
+                "popularity": 0.739,
+                "poster_path": "/4wGaAcQcxCwKOQ3dI2ZnzXbMRJ.jpg",
+                "release_date": "2021-12-02",
+                "title": "Loving Polly",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 2
+            }],
+
+            "recommended":[{
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    53,
+                    9648
+                ],
+                "id": 945168,
+                "original_language": "en",
+                "original_title": "Platonic",
+                "overview": "After a dream about a murder investigation, a professor discovers a pregnant woman in her house. When she enters, details about the crime resurface.",
+                "popularity": 0.6,
+                "poster_path": "/ncS4ebbkf8tdiIRCUfTdRJ0hORt.jpg",
+                "release_date": "2016-04-01",
+                "title": "Platonic",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1,
+                "background":"https://m.media-amazon.com/images/M/MV5BMjlhMDkwMWQtNjNkNS00MTAyLWFlM2MtZjM4NDNlZGY3ZWMyXkEyXkFqcGdeQXVyMzkxODcyMjI@._V1_FMjpg_UX560_.jpg"
+                ,"theme":"purple"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/lIrH9Tat8HIhEuC8l5FKgkDJcvO.jpg",
+                "genre_ids": [
+                    35
+                ],
+                "id": 931098,
+                "original_language": "en",
+                "original_title": "Unusual Cocks",
+                "overview": "Businessmen at Pearljuice Films discuss new projects.",
+                "popularity": 0.6,
+                "poster_path": "/hyEsM5WlfPaOcyz6DUNUd1IFY9j.jpg",
+                "release_date": "2006-09-06",
+                "title": "Unusual Cocks",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1,
+                "background":"https://www.themoviedb.org/t/p/w1280/lIrH9Tat8HIhEuC8l5FKgkDJcvO.jpg"
+                ,"theme":"ave"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    27,
+                    53
+                ],
+                "id": 928773,
+                "original_language": "en",
+                "original_title": "Whisper",
+                "overview": "A young Nurse is assigned to look after a patient in a remote location in the English countryside. As the night continues she finds herself terrorized by an unseen force that is connected with her patient.",
+                "popularity": 1.544,
+                "poster_path": "/3zunvPLgM9qGFr8ob2BpaKSuAJI.jpg",
+                "release_date": "2022-01-23",
+                "title": "Whisper",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1,
+                "background":"https://upload.wikimedia.org/wikipedia/en/0/03/Whisper_poster.jpeg"
+                ,"theme":"grey"
+            },
+            {
+                "adult": false,
+                "background": "https://www.themoviedb.org/t/p/w1280/ejyImQoz0FSOYRADqS7S3LyNDjO.jpg",
+                "genre_ids": [
+                    35
+                ],
+                "id": 915210,
+                "original_language": "en",
+                "original_title": "MOUNDS",
+                "overview": "Dookie James, a pushover dollar store employee, has to finally stand up for himself when caught up in a robbery during a trip to a gas station.",
+                "popularity": 0.6,
+                "poster_path": "/ghZUKCv7Gnmwj30QQ1lL1jwkuUH.jpg",
+                "release_date": "2021-08-20",
+                "title": "MOUNDS",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+                ,"theme":"ave"
+            },
+            {
+                "adult": false,
+                "background": "https://www.themoviedb.org/t/p/w1280/46MfAv5FygMMsX6FlNmxsaCmhUm.jpg",
+                "genre_ids": [],
+                "id": 903851,
+                "original_language": "en",
+                "original_title": "The Weeknd: M A N I A",
+                "overview": "A short film based off The Weeknd's Starboy album.",
+                "popularity": 0.6,
+                "poster_path": "/xpyS1deidF5yOEfoQhECtCdaD6V.jpg",
+                "release_date": "2016-11-23",
+                "title": "The Weeknd: M A N I A",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+                ,"theme":"blue"
+            },
+
+            {
+                "adult": false,
+                "background": "https://www.themoviedb.org/t/p/w1280/vQVOPbaM500ERZyokkbEkws3IGm.jpg",
+                "genre_ids": [
+                    18,
+                    27,
+                    14
+                ],
+                "id": 818878,
+                "original_language": "pt",
+                "original_title": "Vanitas",
+                "overview": "\"Vanity of vanities, everything is vanity\" says the bible. The word flows from the tongue naming the pleasure of earthly life and judging it as beautiful, but shallow and useless; vanity is a deadly sin. A female sin. The man painted the woman, put a mirror in his hands and called it vanity. ",
+                "popularity": 0.662,
+                "poster_path": "/zmcKQKIIPj2bIQAiIOCS9sPxPMI.jpg",
+                "release_date": "2021-04-15",
+                "title": "Vanitas",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+                ,"theme":"grey"
+            },
+            {
+                "adult": false,
+                "background": "https://www.themoviedb.org/t/p/w1280/k3bpGyLJUkAfSBzeEx7sKb7i0n2.jpg",
+                "genre_ids": [
+                    35
+                ],
+                "id": 811161,
+                "original_language": "en",
+                "original_title": "Law Fraud",
+                "overview": "A director of a low-budget movie set slowly loses his mind after a random guy claiming to be Jude Law walks onto set.",
+                "popularity": 0.6,
+                "poster_path": "/3DIcD7bdo14TInqBgZpWtQHa7se.jpg",
+                "release_date": "2021-03-27",
+                "title": "Law Fraud",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+                ,"theme":"grey"
+            },
+            {
+                "adult": false,
+                "background": "https://www.themoviedb.org/t/p/w1280/17KYVwKOqlTiaYfTCntoBs0pZcp.jpg",
+                "genre_ids": [
+                    12
+                ],
+                "id": 787838,
+                "original_language": "en",
+                "original_title": "2019: A Cinematic Odyssey",
+                "overview": "2019: A Cinematic Odyssey is an eight hour musical celebration of film, including footage of over 245 feature-length movies.",
+                "popularity": 0.6,
+                "poster_path": "/1L4kc52eYY65kQ8oLydSZwlLV0k.jpg",
+                "release_date": "2019-09-28",
+                "title": "2019: A Cinematic Odyssey",
+                "video": false,
+                "vote_average": 10,
+                "vote_count": 1
+                ,"theme":"bright"
+            }
+        ]
+  
+   
+}
+

@@ -1,0 +1,140 @@
+
+.header h2{
+    display: inline-block;
+    color: var(--secondary-color);
+}
+header{
+    /* opacity: .7; */
+    /* background: var(--gradient-color); */
+    /* background-color: #112131; */
+    /* background-color: */
+}
+
+.nav-bar{
+    height: 70px;
+    /* width: 40vw; */
+    background:var(--navbar-color);
+    color:var(--txt-color);
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.2em;
+}
+.nav-bar a::after{
+    content: '';
+    position: absolute;
+    width: 140%;
+    height: 4px;
+    background-color: #f00;
+    left:-110%;
+    display: none;
+    top:40px;
+    transition:transform 1s;
+}
+.nav-bar a:hover::after{
+     transform: translateX(65%) ; 
+     /* transition-duration: 1s;
+     -o-transition-duration: .8s;
+     -webkit-transition-duration: .8s;
+     -moz-transition-duration: .8s;
+
+
+     transition-duration: 1s; */
+    display: block;
+}
+.header .list-for-web{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60vw;
+}
+li{
+    list-style: none;
+}
+.primary-btn{
+    font-size:1.2em;
+    font-weight: 400;
+    border-radius: 3px;
+    width: auto;
+    padding-left:10px;
+    padding-right:10px;
+
+}
+a{
+    color: rgb(242, 232, 232);
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    transition: transform .8s;
+}
+.primary-btn:hover{
+    transform: scale(1.05);
+}
+button{
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    height: 40px;
+
+}
+.toggle-btn{
+   padding: 12px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+}
+
+@media (max-width:865px) {
+    .primary-btn{
+        font-size: .9em;
+    }
+    .header .list-for-web{
+    font-size: .8em; 
+    }
+   
+}
+@media (max-width:775px) {
+   
+    .header .list-for-web{
+        display: none;
+    }
+    .subscribe-btn{
+        display: none;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .list-for-mobile{
+        display: flex;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: var(--primary-color);
+        z-index: 100;
+        top:0;
+        left: 0;
+        width: 50vw;
+        height: 89vh;
+        position: absolute;
+        align-items: flex-start;
+    }
+    .list-for-mobile a{
+        color: #fff;
+        padding:2em;
+        /* height: ; */
+        text-align: left;
+        width: 50vw;
+    }  .list-for-mobile a:hover{
+        background-color: #f00;
+    }
+    .list-for-mobile a:hover::after{
+        /* color: #f00; */
+        display: none;
+    }
+    
+
+   
+}
