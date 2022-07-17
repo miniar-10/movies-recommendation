@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {RecommendedProvider} from './RecommendedContext'
+import {UpcomingProvider} from'./UpcomingContext'
+import {TrendingProvider} from './trendingContext'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+  <RecommendedProvider>
+    <UpcomingProvider>
+    <TrendingProvider>
     <App />
+    </TrendingProvider>
+    </UpcomingProvider>
+    </RecommendedProvider>
   </React.StrictMode>
 );
 

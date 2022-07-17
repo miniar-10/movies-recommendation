@@ -1,22 +1,7 @@
 import React,{useState,useEffect} from "react";
 import { useParams } from 'react-router-dom'
-// import genres from'./genres.json';
 import './tutorial.css'
-// const genre=genres.genres;
 
-// function get_genre(filmGenres){
-//     const myGenres=[]
-//     for(let g in filmGenres){
-//         // //console.log(g)
-//         genre.map((item)=>{
-//             if(item.id===filmGenres[g]){
-//                 //console.log(g)
-//                 myGenres.push(item.name);
-//             }
-//         })
-//     }
-//     return(myGenres)
-// }
 
 export default function Tutorial (){
     const { id } = useParams();
@@ -39,7 +24,7 @@ export default function Tutorial (){
     // const d=get_genre(film.genre_ids)
     // console.log(film.genres[0])
 
-    return  <div className="tutorial-container">
+    return film? <div className="tutorial-container">
         
    
 
@@ -87,5 +72,5 @@ export default function Tutorial (){
                     </p>
 
                         </div> 
-            </div> 
+            </div> :<h1>Loading..</h1>
 }

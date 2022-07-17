@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useContext} from "react";
 
 // import trending_films from'./films.json';
 // import UpcomingCard from "./upcomingCard";
@@ -9,20 +9,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import RecommendedCard from "./RecommendedCard";
 import{Link} from 'react-router-dom'
+import { TrendingContext } from "./trendingContext";
 
 export default function Trending(){
-    const req="https://api.themoviedb.org/3/trending/all/day?api_key=542f1dd0ab5fb5284db223dca8e27224&language=en-US&external_source=imdb_id"
-
-    const[trending,setTrending]=useState([{}]);
-
-    const getTrending=async()=>{
-        const trendings=await fetch(req);
-        const trending_data=await trendings.json();
-        console.log(trending_data)
-        setTrending(trending_data.results)
-    }
-
-    useEffect(()=>getTrending,[]);
+   const trending=useContext(TrendingContext)
     function get_image(film){
         // if(film.backdrop_path!==null&& film.backdrop_path!==undefined){
         //     // console.log(film.backdrop_path)
@@ -67,8 +57,8 @@ export default function Trending(){
               };
     return<div className="recommended">
     <h3 className="page-header">Trending this week </h3>
-    <div className="bord">
-<Slider {...settings}  className="recommended-container">
+   {trending? <div className="bord">
+    <Slider {...settings}  className="recommended-container">
 
        { trending.map((item)=>{
                 const key=item.id
@@ -82,7 +72,7 @@ export default function Trending(){
                 />)
             }})}
     </Slider>
-    </div>
+    </div>:<h1>Loading ..</h1>}
         <div className="see-all">
             <Link to='/trending'>View All</Link>
         </div>
