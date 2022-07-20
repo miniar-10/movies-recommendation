@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {RecommendedProvider} from './RecommendedContext'
-import {UpcomingProvider} from'./UpcomingContext'
-import {TrendingProvider} from './trendingContext'
+import {RecommendedProvider} from './context/RecommendedContext'
+import {UpcomingProvider} from'./context/UpcomingContext'
+import {TrendingProvider} from './context/trendingContext'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

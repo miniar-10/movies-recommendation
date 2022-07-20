@@ -1,15 +1,40 @@
+import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
+// import'./header.css'
+import styled from'styled-components'
 
-.header h2{
+export default function Header(){
+    const [Mobile,setMobile]=useState(false);
+    return(<HEADER className="header">
+        <header>
+        <nav className="nav-bar">
+
+            <h2>LOGO</h2>
+                <ul className={Mobile?'list-for-mobile':'list-for-web'} onClick={()=>setMobile(false)}>
+                    <Link to='/'>Home</Link>
+                    <Link to='/trending'>Trending</Link>
+
+                    <Link to='/recommended'>Recommended</Link>
+
+                    <Link to='/upcoming'>Upcoming</Link>
+
+
+                </ul>
+                <button className='toggle-btn' onClick={()=>setMobile(!Mobile)}>
+                    {Mobile?<i class="fa fa-times" aria-hidden="true"></i>:<i class="fa fa-bars" aria-hidden="true"></i>}
+                
+
+                </button>
+                <button className='primary-btn subscribe-btn'>Subscribe now</button>
+            </nav>
+        </header>
+    </HEADER>)
+}
+const HEADER=styled.div`
+h2{
     display: inline-block;
     color: var(--secondary-color);
 }
-header{
-    /* opacity: .7; */
-    /* background: var(--gradient-color); */
-    /* background-color: #112131; */
-    /* background-color: */
-}
-
 .nav-bar{
     height: 70px;
     /* width: 40vw; */
@@ -44,42 +69,14 @@ header{
      transition-duration: 1s; */
     display: block;
 }
-.header .list-for-web{
+ .list-for-web{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 60vw;
 }
-li{
-    list-style: none;
-}
-.primary-btn{
-    font-size:1.2em;
-    font-weight: 400;
-    border-radius: 3px;
-    width: auto;
-    padding-left:10px;
-    padding-right:10px;
 
-}
-a{
-    color: rgb(242, 232, 232);
-    font-weight: 600;
-    position: relative;
-    text-decoration: none;
-    transition: transform .8s;
-}
-.primary-btn:hover{
-    transform: scale(1.05);
-}
-button{
-    background-color: var(--secondary-color);
-    color: #fff;
-    border: none;
-    height: 40px;
-
-}
 .toggle-btn{
    padding: 12px 40px;
     border-radius: 5px;
@@ -91,14 +88,14 @@ button{
     .primary-btn{
         font-size: .9em;
     }
-    .header .list-for-web{
+     .list-for-web{
     font-size: .8em; 
     }
    
 }
 @media (max-width:775px) {
    
-    .header .list-for-web{
+     .list-for-web{
         display: none;
     }
     .subscribe-btn{
@@ -120,13 +117,19 @@ button{
         height: 89vh;
         position: absolute;
         align-items: flex-start;
+        padding: 0;
     }
     .list-for-mobile a{
         color: #fff;
-        padding:2em;
+        /* padding:2em; */
         /* height: ; */
         text-align: left;
-        width: 50vw;
+        /* width: 50vw; */
+        color: #fff;
+    padding: 2em;
+    text-align: left;
+    width: 40vw;
+    padding: 5vw;
     }  .list-for-mobile a:hover{
         background-color: #f00;
     }
@@ -138,3 +141,4 @@ button{
 
    
 }
+`

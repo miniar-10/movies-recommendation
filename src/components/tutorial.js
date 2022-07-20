@@ -1,7 +1,8 @@
 import React,{useState,useEffect} from "react";
 import { useParams } from 'react-router-dom'
-import './tutorial.css'
-
+// import './tutorial.css'
+import styled from "styled-components";
+import Loading from "./loading";
 
 export default function Tutorial (){
     const { id } = useParams();
@@ -24,7 +25,7 @@ export default function Tutorial (){
     // const d=get_genre(film.genre_ids)
     // console.log(film.genres[0])
 
-    return film? <div className="tutorial-container">
+    return film? <TUTORIAL className="tutorial-container">
         
    
 
@@ -72,5 +73,70 @@ export default function Tutorial (){
                     </p>
 
                         </div> 
-            </div> :<h1>Loading..</h1>
+            </TUTORIAL> :<Loading/>
 }
+const TUTORIAL=styled.div`
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    padding:3rem 3rem 0;
+    text-align: left;
+.tuto-img{
+    width:30vw;
+    height: 100%;margin:0;
+    border-radius: 3px;
+}
+ .informations{
+    padding:0 3rem;
+    line-height: 2rem;
+}
+span{
+margin-right: 16px;
+}
+ h3{
+    font-weight: 200;
+}
+.tuto-release-date{
+    font-weight: 200;
+    color:aliceblue;
+    margin-left: 1.2rem;
+}
+.tuto-vote-avg{
+    margin-left: 1.2rem;
+
+}
+.fa-start-o:before{
+    color:#f00;
+}
+ h1{
+    margin-bottom: 0.2rem;
+    font-weight: 400;
+    line-height: 3.4rem;;
+    font-size: 3rem;
+}
+
+ h1 span{
+    font-size: 1.6rem;
+}
+ h3{
+    margin-bottom: 1.2rem;
+    margin-bottom: .8rem;
+
+}
+
+ .current-rate{
+    margin-bottom: 1.2rem;
+    margin-bottom: .8rem;
+
+}
+.film-elt{
+    margin-bottom: .8rem;
+
+}
+.fa-star ,.fa-star-half,.fa-star-o{
+    color :var(--secondary-color);
+    transform: scale(1.2);
+    margin:4px
+}
+`

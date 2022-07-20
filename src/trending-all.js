@@ -1,7 +1,8 @@
 import React,{useState ,useEffect,useContext} from "react";
-import { TrendingContext } from "./trendingContext";
-import  RecommendedCard from './RecommendedCard'
-import'./recommended.css'
+import { TrendingContext } from "./context/trendingContext";
+import  RecommendedCard from './components/RecommendedCard'
+// import'./recommended.css'
+import styled from "styled-components";
 export default function TrendingAll(){
 
     const trending= useContext(TrendingContext)
@@ -20,7 +21,7 @@ export default function TrendingAll(){
  
 
    
-    return<div className="recommended">
+    return<TRENDING className="recommended">
             <h1 className="page-header all-page-header">Trending this week</h1>
     <div   className="recommended-all-container">
 
@@ -37,5 +38,19 @@ export default function TrendingAll(){
                 }})}
             
             </div>
-    </div>
+    </TRENDING>
     }
+    const TRENDING=styled.div`
+    .recommended-all-container{
+  display: grid;
+  grid-template-columns: repeat(4 ,16vw);
+  justify-content: center;
+  grid-gap: 24px;
+}
+h1{
+    margin-bottom: 16px;
+}
+.all-page-header{
+text-align: center!important;
+}
+    `

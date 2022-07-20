@@ -2,14 +2,17 @@ import React,{useContext} from "react";
 
 // import trending_films from'./films.json';
 // import UpcomingCard from "./upcomingCard";
-import TrendingCard from "./trendingCard";
-import'./trending.css'
+// import TrendingCard from "./trendingCard";
+// import'./trending.css'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import RecommendedCard from "./RecommendedCard";
 import{Link} from 'react-router-dom'
-import { TrendingContext } from "./trendingContext";
+import { TrendingContext } from "../context/trendingContext";
+import styled from "styled-components";
+
+// import { TrendingContext } from "./cont/trendingContext";
 
 export default function Trending(){
    const trending=useContext(TrendingContext)
@@ -49,13 +52,13 @@ export default function Trending(){
                 infinite: true,
                 speed: 500,
                 slidesToShow: 6,
-                slidesToScroll: 6,
+                slidesToScroll: 5,
                 autoplay: true,
                 nextArrow:<SampleNextArrow/>,
                 prevArrow:<SamplePrevArrow/>
         
               };
-    return<div className="recommended">
+    return<TRENDING className="recommended">
     <h3 className="page-header">Trending this week </h3>
    {trending? <div className="bord">
     <Slider {...settings}  className="recommended-container">
@@ -76,6 +79,22 @@ export default function Trending(){
         <div className="see-all">
             <Link to='/trending'>View All</Link>
         </div>
-    </div>
+    </TRENDING>
 
 }
+const TRENDING=styled.div`
+ min-height: 70vh!important;
+    width: 100%;
+    padding: 2.5%;
+    .see-all{
+    /* width: 15vw; */
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: right;
+    margin: 1.5rem 1.2rem;
+}
+.see-all:hover a{
+color: #f00;
+}
+    /* padding-left:5vw; */
+`

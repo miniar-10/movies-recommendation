@@ -1,7 +1,9 @@
 import React,{useState ,useContext} from "react";
-import  RecommendedCard from './RecommendedCard'
-import'./recommended.css'
-import { UpcomingContext } from "./UpcomingContext";
+import Loading from "./components/loading";
+import  RecommendedCard from './components/RecommendedCard'
+// import'./recommended.css'
+import styled from "styled-components";
+import { UpcomingContext } from "./context/UpcomingContext";
 export default function UpcomingAll(){
     const Upcoming=useContext(UpcomingContext)
 
@@ -16,7 +18,7 @@ export default function UpcomingAll(){
  
 
    
-    return Upcoming?<div className="recommended">
+    return Upcoming?<UPCOMING className="recommended">
             <h1 className="page-header all-page-header">Upcoming this week</h1>
     <div   className="recommended-all-container">
 
@@ -33,5 +35,19 @@ export default function UpcomingAll(){
                 }})}
             
             </div>
-    </div>:<h1>Loading..</h1>
+    </UPCOMING>:<Loading/>
     }
+const UPCOMING=styled.div`
+    .recommended-all-container{
+  display: grid;
+  grid-template-columns: repeat(4 ,16vw);
+  justify-content: center;
+  grid-gap: 24px;
+}
+h1{
+    margin-bottom: 16px;
+}
+.all-page-header{
+text-align: center!important;
+}
+`

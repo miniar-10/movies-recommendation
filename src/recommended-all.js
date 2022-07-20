@@ -1,7 +1,8 @@
 import React,{ useContext} from "react";
-import  RecommendedCard from './RecommendedCard'
-import { RecommendedContext } from "./RecommendedContext";
-import'./recommended.css'
+import  RecommendedCard from './components/RecommendedCard'
+import { RecommendedContext } from "./context/RecommendedContext";
+// import'./recommended.css'
+import styled from "styled-components";
 export default function RecommendedAll(){
     const recommendedFilms=useContext(RecommendedContext);
    
@@ -16,7 +17,7 @@ export default function RecommendedAll(){
  
 
    
-    return<div className="recommended">
+    return<RECOMMENDED className="recommended">
             <h1 className="page-header all-page-header">recommended for you:</h1>
     <div   className="recommended-all-container">
 
@@ -34,5 +35,19 @@ export default function RecommendedAll(){
                 }})}
             
             </div>
-    </div>
+    </RECOMMENDED>
     }
+const RECOMMENDED=styled.div`
+.recommended-all-container{
+  display: grid;
+  grid-template-columns: repeat(4 ,16vw);
+  justify-content: center;
+  grid-gap: 24px;
+}
+.all-page-header{
+text-align: center!important;
+}
+h1{
+    margin-bottom: 16px;
+}
+`

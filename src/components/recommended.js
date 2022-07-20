@@ -3,9 +3,10 @@ import  RecommendedCard from './RecommendedCard'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import'./recommended.css'
+// import'./recommended.css'
 import { Link } from "react-router-dom";
-import { RecommendedContext } from "./RecommendedContext";
+import styled from "styled-components";
+import { RecommendedContext } from "../context/RecommendedContext";
 
 
 export default function Recommended(){    
@@ -40,14 +41,14 @@ export default function Recommended(){
                 infinite: true,
                 speed: 500,
                 slidesToShow: 6,
-                slidesToScroll: 6,
+                slidesToScroll: 5,
                 autoplay: true,
                 nextArrow:<SampleNextArrow/>,
                 prevArrow:<SamplePrevArrow/>
         
               };
    
-    return<div className="recommended">
+    return<RECOMMENDED className="recommended">
             <h3 className="page-header">Recommended for you:</h3>
             {recommendedFilms?<div className="bord">
     <Slider {...settings}  className="recommended-container">
@@ -70,5 +71,20 @@ export default function Recommended(){
             <div className="see-all">
             <Link to='/recommended'>View All</Link>
         </div>
-    </div>
+    </RECOMMENDED>
     }
+const RECOMMENDED=styled.div`
+    padding:2.5%;
+    width: 100%;
+   
+.see-all{
+    /* width: 15vw; */
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: right;
+    margin: 1.5rem 1.2rem;
+}
+.see-all:hover a{
+color: #f00;
+}
+`

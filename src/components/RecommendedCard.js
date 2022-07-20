@@ -1,5 +1,76 @@
-    .movie_card {
-        position: relative;
+import React,{useState}  from "react";
+import genres from'../genres.json';
+import styled from "styled-components";
+// import Link from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+// import Tutorial from "./tutorial";
+const genre=genres.genres;
+
+
+function get_genre(filmGenres){
+    const myGenres=[]
+    for(let g in filmGenres){
+        // //console.log(g)
+        genre.map((item)=>{
+            if(item.id===filmGenres[g]){
+                //console.log(g)
+                myGenres.push(item.name);
+            }
+        })
+    }
+    return(myGenres)
+}
+
+export default function RecommendedCard(props){
+    const[filmsss,setFilm]=useState(null)
+    const ReadHandle=(elt)=>{
+        setFilm(elt)
+        console.log(filmsss)
+    }
+    const[addedToWatchlist,setAddedToWatchlist]=useState(false);
+
+    const handleClick=()=>{
+        setAddedToWatchlist(!addedToWatchlist)
+    }
+    
+    const d=get_genre(props.film.genre_ids)
+//console.log(d[0])
+    return<CARD className="movie_card" id={props.film.theme}>
+                    <div className="recommended-img-div">
+                        <img className="recommended-card-img" src={props.image}/>
+                    </div>
+                    <div className="info_section">
+                        <div class="rate">
+                            <div className="current-rate">
+                                <i class="fa fa-star"></i>
+                                <span>{props.film.vote_average}</span>
+                            </div>
+                            <div className="add-rate">
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>
+                        <h4>{props.film.title}</h4>
+                        {/* <span className="minutes">117 min</span> */}
+                        <p className="type">
+                            {d.map((i)=>{
+                                 return <span >{i}</span>
+                            })}
+                        </p>
+                        <button className="read-more-btn" ><Link to={`/tutorial/${props.film.id}`}>Read more</Link> </button>
+                        <button onClick={handleClick} className="watch-list-btn">{(addedToWatchlist || localStorage.getItem(props.film.id))?'Remove from watchlist ': 'Add to watchlist'}</button>
+
+                    </div>
+             
+
+                </CARD> 
+          
+                
+                    
+    }
+ 
+  const CARD=styled.div`
+     position: relative;
         display: block;
         width: 15vw;
         height: 300px;
@@ -12,16 +83,12 @@
         display: flex;
         flex-direction: column;
         background: rgba(255, 255, 255, 0.05);
+        margin-right: 8px;
 
-  }
-  .recommended{
-    padding:0 2rem
-  }
-  .movie_card:hover .recommended-img-div::after{
+        &:hover .recommended-img-div::after{
     display: block;
   }
-
-@media screen and (min-width: 768px){
+  @media screen and (min-width: 768px){
 .movie_header {
     width: 60%;
 }
@@ -36,9 +103,9 @@ font-size: larger;
   font-size: 1.2rem;
 
 }
-    .movie_card .info_section {
+     .info_section {
       position: relative;
-      width: 100%;
+      /* width: 100%; */
       height: 100%;
       /* top: 40%; */
       background-blend-mode: multiply;
@@ -53,7 +120,7 @@ font-size: larger;
       display: none;
         /* border-radius: 10px; */
     }
-    .movie_card:hover .info_section{
+    &:hover .info_section{
         display: flex;
     }
     .recommended-img-div{
@@ -95,7 +162,7 @@ font-size: larger;
  
     
 
-.movie_card .info_section .minutes {
+ .info_section .minutes {
     display: inline-block;
     margin-top: 10px;
     color: #fff;
@@ -139,19 +206,19 @@ font-size: larger;
      
   }
 
-.movie_card .info_section .movie_social ul {
+ .info_section .movie_social ul {
     list-style: none;
     padding: 0;
 }
  
-.movie_card .info_section .movie_social ul li {
+ .info_section .movie_social ul li {
     display: inline-block;
     color: rgba(255, 255, 255, 0.4);
     transition: color 0.8s;
     /* transition-delay: 0.15s; */
     margin: 0 10px;
 }
-.movie_card .info_section .movie_social ul li i {
+ .info_section .movie_social ul li i {
     font-size: 19px;
     cursor: pointer;
 }
@@ -172,96 +239,9 @@ font-size: larger;
     background-position: -100% 10% !important;  
   }
 }
-
-
-
-#bright{
-  box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
-  
-}
-#purple{
-    box-shadow: 0px 0px 150px -45px rgba(234, 183, 241, 0.5);
-    
-  }
-  #purple:hover{
- 
-    box-shadow: 0px 0px 120px -55px rgba(234, 183, 241, 0.5);
-
-}
-#bright:hover{
- 
-        box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
-   
-}
-/* .bright_back{
-  background: url("https://m.media-amazon.com/images/M/MV5BMjlhMDkwMWQtNjNkNS00MTAyLWFlM2MtZjM4NDNlZGY3ZWMyXkEyXkFqcGdeQXVyMzkxODcyMjI@._V1_FMjpg_UX560_.jpg");
-} */
-
-#tomb{
-  box-shadow: 0px 0px 150px -45px rgba(19, 160, 134, 0.6);
-  
-  
-}
-#tomb:hover{
-    box-shadow: 0px 0px 120px -55px rgba(19, 160, 134, 0.6);
-
-}
-#blue{
-    
-        box-shadow: 0px 0px 150px -45px rgba(103, 173, 235, 0.6);
-}
-#blue:hover{
-    box-shadow: 0px 0px 120px -55px rgba(103, 173, 235, 0.6);
-
-}
-.tomb_back{
-  background: url("https://fsmedia.imgix.net/cd/c9/5e/ba/4817/4d9a/93f0/c776ec32ecbc/lara-crofts-neck-looks-unnatural-in-the-new-poster-for-tomb-raider.png");
-}
-#grey{
-    box-shadow: 0px 0px 150px -45px rgba(171, 175, 179, 0.7);
-    margin-bottom: 200p
-}
-#grey:hover{
-    box-shadow: 0px 0px 120px -55px rgba(171, 175, 179, 0.7);
-
-}
-#ave{
-  box-shadow: 0px 0px 150px -45px rgba(199,147,75, 0.7);
-  margin-bottom: 200px;
- 
-}
-#ave:hover{
-    box-shadow: 0px 0px 120px -55px rgba(199,147,75, 0.7);
-
-}
-
-.ave_back{
-    background: url("https://www.gannett-cdn.com/-mm-/c03fd140debe8ad4c05cf81a5cad7ad61a12ce52/c=0-1580-2985-3266&r=x803&c=1600x800/local/-/media/2017/06/09/USATODAY/USATODAY/636326272873599176-Black-Panther-Teaser.jpg");
-}
-.movie_card .blur_back {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    height: 100%;
-    right: 0;
-    background-size: cover;
-    width:40%;
-    border-radius: 11px;
-}
-.movie_card .info_section h4 {
+.info_section h4 {
     color: #fff;
     font-weight: 400;
-}
-.trending .ctrl-btn .next {
-  
-  top: 30%;
-  z-index: 10000;
-
-}
-.trending .ctrl-btn .prev {
-top:30%;
-z-index: 10000;
-
 }
 .watch-list-btn{
   background-color: transparent;
@@ -294,28 +274,30 @@ button{
 
 }
 @media (max-width:800px) {
+    height: 200px;
+
   .info_section .rate,.type,.watch-list-btn{
     display: none;
   }
-  .movie_card{
-    height: 200px;
-  }
-  .movie_card img{
+  
+  
+   img{
     height: 100%;
   }
-  .movie_card h4{
+   h4{
     font-size: .8em;
     font-weight: 600;
   }
   
 }
 @media (max-width:560px) {
+    height: 150px;
+
   .info_section .rate,.type,.watch-list-btn{
     display: none;
   }
-  .movie_card{
-    height: 150px;
-  }
+  
+  
 
  .read-more-btn{
   font-size: .7rem;
@@ -323,27 +305,11 @@ button{
   ;
 
  }
- .movie_card .info_section{
+  .info_section{
   padding: .2em
  }
-  
 }
-.recommended-all-container{
-  display: grid;
-  grid-template-columns: repeat(4 ,16vw);
-  justify-content: center;
-  grid-gap: 24px;
-}
-.see-all{
-    /* width: 15vw; */
-    display: flex;
-    /* align-items: flex-end; */
-    justify-content: right;
-    margin: 1.5rem 1.2rem;
-}
-.see-all:hover a{
-color: #f00;
-}
-.all-page-header{
-text-align: center!important;
-}
+
+  `
+
+
